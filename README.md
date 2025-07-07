@@ -49,8 +49,8 @@ sudo pacman -S nodejs npm git
 
 ```bash
 # Clone the project
-git clone https://github.com/your-username/image-labeler-ai.git
-cd image-labeler-ai
+git clone https://github.com/pronnmark/ai-image-labeler.git
+cd ai-image-labeler
 
 # Install everything automatically
 chmod +x install.sh
@@ -228,7 +228,7 @@ echo 'export PATH=~/.npm-global/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 
 # Then reinstall
-cd image-labeler-ai
+cd ai-image-labeler
 npm install -g .
 ```
 
@@ -313,7 +313,7 @@ nano ~/.bashrc
 rm ~/.image-labeler-config
 
 # Remove project folder
-rm -rf ~/path/to/image-labeler-ai/
+rm -rf ~/path/to/ai-image-labeler/
 ```
 
 ---
@@ -343,7 +343,7 @@ quick
 
 ```bash
 # SETUP (one time)
-git clone <repo> && cd image-labeler-ai && ./install.sh
+git clone https://github.com/pronnmark/ai-image-labeler.git && cd ai-image-labeler && ./install.sh
 image-labeler config --api-key YOUR_KEY
 
 # DAILY USE
