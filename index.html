@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Labeler AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Labeler AI</h1>
+        
+        <div class="api-section">
+            <label for="apiKey">Gemini API Key:</label>
+            <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+            <button id="saveApiKey">Save Key</button>
+        </div>
+
+        <div class="upload-section">
+            <div class="upload-options">
+                <button id="selectFiles">Select Images</button>
+                <button id="selectFolder">Select Folder</button>
+            </div>
+            <input type="file" id="fileInput" accept="image/*" multiple style="display: none;">
+            <input type="file" id="folderInput" webkitdirectory accept="image/*" style="display: none;">
+        </div>
+
+        <div id="imageGrid" class="image-grid"></div>
+        
+        <div id="controls" class="controls" style="display: none;">
+            <button id="analyzeAll">Analyze All Images</button>
+            <button id="renameAll">Download Individual Files</button>
+            <button id="downloadZip">Download ZIP Folder</button>
+            <button id="clearAll">Clear All</button>
+        </div>
+
+        <div id="progress" class="progress" style="display: none;">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+            <span id="progressText">Processing...</span>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
